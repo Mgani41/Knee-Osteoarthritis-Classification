@@ -1,0 +1,48 @@
+Dataset link :
+	https://www.kaggle.com/shashwatwork/knee-osteoarthritis-dataset-with-severity
+
+
+Classifier layers:
+     1   ''   Image Input             250879x1x1 images with 'zerocenter' normalization
+     2   ''   Convolution             10 1x1 convolutions with stride [1  1] and padding [0  0  0  0]
+     3   ''   ReLU                    ReLU
+     4   ''   Max Pooling             1x1 max pooling with stride [2  2] and padding [0  0  0  0]
+     5   ''   Convolution             10 1x1 convolutions with stride [1  1] and padding [0  0  0  0]
+     6   ''   ReLU                    ReLU
+     7   ''   Max Pooling             1x1 max pooling with stride [2  2] and padding [0  0  0  0]
+     8   ''   Convolution             10 1x1 convolutions with stride [1  1] and padding [0  0  0  0]
+     9   ''   ReLU                    ReLU
+    10   ''   Max Pooling             1x1 max pooling with stride [2  2] and padding [0  0  0  0]
+    11   ''   Convolution             10 1x1 convolutions with stride [1  1] and padding [0  0  0  0]
+    12   ''   ReLU                    ReLU
+    13   ''   Max Pooling             1x1 max pooling with stride [2  2] and padding [0  0  0  0]
+    14   ''   Convolution             10 1x1 convolutions with stride [1  1] and padding [0  0  0  0]
+    15   ''   ReLU                    ReLU
+    16   ''   Max Pooling             1x1 max pooling with stride [2  2] and padding [0  0  0  0]
+    17   ''   Fully Connected         1 fully connected layer
+    18   ''   Softmax                 softmax
+    19   ''   Classification Output   crossentropyex
+
+Optimization Parameters:
+    Iteration - 100
+    Population size - 50
+    fitness - (accuracy+Sensitivity+Specificity)/3
+
+Classifier Hyper Parameters:
+    optimizer - adam
+    MaxEpochs - 100
+    InitialLearnRate - 0.01
+
+
+Feature Dimension:
+	Total = 8960 5   224   224
+
+	class 1 - 3529 5   224   224
+`	class 2 - 1617 5   224   224
+	class 3 - 2366 5   224   224
+	class 4 - 1180 5   224   224
+	class 5 - 268  5   224   224
+
+
+
+        
